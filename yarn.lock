@@ -1139,6 +1139,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jwt-decode@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "jwt-decode@npm:4.0.0"
+  checksum: 10c0/de75bbf89220746c388cf6a7b71e56080437b77d2edb29bae1c2155048b02c6b8c59a3e5e8d6ccdfd54f0b8bda25226e491a4f1b55ac5f8da04cfbadec4e546c
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^5.6.0":
   version: 5.6.0
   resolution: "keyv@npm:5.6.0"
@@ -1382,6 +1389,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"oidc-client-ts@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "oidc-client-ts@npm:3.5.0"
+  dependencies:
+    jwt-decode: "npm:^4.0.0"
+  checksum: 10c0/93cbb62adbfeee4bf705199a94e5790217f211b85dd988827e555481d4e605a5263292b740f29765ac01528b99486f57bbd96679ffca53d7ef76d8f7f7c9f979
+  languageName: node
+  linkType: hard
+
 "optionator@npm:^0.9.3":
   version: 0.9.4
   resolution: "optionator@npm:0.9.4"
@@ -1494,6 +1510,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-oidc-context@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "react-oidc-context@npm:3.3.1"
+  peerDependencies:
+    oidc-client-ts: ^3.1.0
+    react: ">=16.14.0"
+  checksum: 10c0/16239b1818d0fca5e60e37c63f000252ae839aa8f915c8871b186bbc718e6c9694ac3a881388d13bb69d2b15bbd61cf6c7cb200bb548bbc469fa6fc8e36d80f7
+  languageName: node
+  linkType: hard
+
 "react@npm:^19.3.1":
   version: 19.3.1
   resolution: "react@npm:19.3.1"
@@ -1596,8 +1622,10 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^7.1.1"
     eslint-plugin-react-refresh: "npm:^0.5.7"
     globals: "npm:^17.13.0"
+    oidc-client-ts: "npm:^3.5.0"
     react: "npm:^19.3.1"
     react-dom: "npm:^19.3.1"
+    react-oidc-context: "npm:^3.3.1"
     vite: "npm:^8.3.4"
   languageName: unknown
   linkType: soft
